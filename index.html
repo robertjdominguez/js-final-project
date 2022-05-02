@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supabase Starter</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+    <!-- This library is here so it loads before the page is rendered -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  </head>
+  <body>
+    <h1>Getting Started with Supabase</h1>
+    <!-- Rankings -->
+    <h3>Candies</h3>
+    <ol class="candy-list"></ol>
+    <!-- Inputs -->
+    <!-- three inputs that all are dropdown menus -->
+    <h3>Inputs</h3>
+    <form class="input-form">
+      <label for="candy-dropdown">Candy #1</label>
+      <select class="candy-name" name="candy-one">
+        <option value="">Select a candy</option>
+        <option value="Twix">Twix</option>
+        <option value="Take 5">Take 5</option>
+        <option value="M&Ms">M&Ms</option>
+      </select>
+      <label for="candy-dropdown">Candy #2</label>
+      <select class="candy-name" name="candy-two">
+        <option value="">Select a candy</option>
+        <option value="Twix">Twix</option>
+        <option value="Take 5">Take 5</option>
+        <option value="M&Ms">M&Ms</option>
+      </select>
+      <label for="candy-dropdown">Candy #3</label>
+      <select class="candy-name" name="candy-three">
+        <option value="">Select a candy</option>
+        <option value="Twix">Twix</option>
+        <option value="Take 5">Take 5</option>
+        <option value="M&Ms">M&Ms</option>
+      </select>
+      <a onClick="insertData()">Submit</a>
+    </form>
+    <!-- Our script that will handle all the logic -->
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
